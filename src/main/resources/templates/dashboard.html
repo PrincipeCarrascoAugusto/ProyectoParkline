@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Dashboard Parkline</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Menu -->
+        <nav class="sidebar">
+            <h2>Parkline Dashboard</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarSeccion('autos')">Autos Estacionados</a></li>
+                <li><a href="#" onclick="mostrarSeccion('espacios')">Espacios Disponibles</a></li>
+                <li><a href="#" onclick="mostrarSeccion('historial')">Historial</a></li>
+                <li><a href="#" onclick="mostrarSeccion('usuarios')">Usuarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Bienvenido a Parkline</h1>
+            </header>
+
+            <!-- Secciones Dinámicas -->
+            <section id="autos" class="seccion">
+                <h2>Autos Estacionados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Placa</th>
+                            <th>Hora de Entrada</th>
+                            <th>Espacio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autos-body">
+                        <!-- Datos llenados por JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="espacios" class="seccion" style="display:none;">
+                <h2>Espacios Disponibles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Estado</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="espacios-body">
+                        <!-- Datos llenados por JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="historial" class="seccion" style="display:none;">
+                <h2>Historial de Autos</h2>
+                <!-- Contenido de historial -->
+            </section>
+
+            <section id="usuarios" class="seccion" style="display:none;">
+                <h2>Gestión de Usuarios</h2>
+                <!-- Contenido de usuarios -->
+            </section>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script> <!-- Archivo JS -->
+</body>
+</html>
+
